@@ -1,0 +1,62 @@
+Xft.dpi:    96
+Xft.antialias:  1
+Xft.hinting:    1
+Xft.hintstyle:  hintmedium
+
+URxvt.font: xft:JetBrains Mono:size=13,style=Regular
+
+*background:         #181818
+*foreground:         #aaaaaa
+*cursorColor:        #ffdd33
+*colorUL:            #8ae234
+*underlineColor:     #92659a
+*color0:             #2e3436
+*color8:             #6e706b
+*color1:             #cc0000
+*color9:             #ef2929
+*color2:             #4e9a06
+*color10:            #8ae234
+*color3:             #ffdd33
+*color11:            #fce94f
+*color4:             #3465a4
+*color12:            #729fcf
+*color5:             #92659a
+*color13:            #c19fbe
+*color6:             #07c7ca
+*color14:            #63e9e9
+*color7:             #d3d7cf
+*color15:            #eeeeec
+
+! xscreensaver
+xscreensaver.fade:        false
+xscreensaver.unfade:      false
+
+URxvt.scrollBar: false
+!URxvt.scrollBar_right: true
+URxvt.geometry: 80x24
+URxvt.transparent: false
+!URxvt.shading: 12
+!URxvt.letterSpace: 0
+!URxvt.lineSpace: 0
+!URxvt.internalBorder: 4
+URxvt.cursorBlink: true
+
+! Disable ISO 14755 unicode input so we can use Ctrl-Shift bindings
+URxvt.iso14755:        false
+URxvt.iso14755_52:     false
+
+! Disable Ctrl-Alt-c & Ctrl-Alt-v bindings (optional)
+URxvt.keysym.C-M-c:    builtin-string:
+URxvt.keysym.C-M-v:    builtin-string:
+
+! Bind Ctrl-Shift-c & Ctrl-Shift-v to copy and paste
+! I dont know why, but I needed to use hex keysym values to get it to work
+URxvt.keysym.C-S-0x43: eval:selection_to_clipboard
+URxvt.keysym.C-S-0x56: eval:paste_clipboard
+
+URxvt.perl-ext-common: default,tabbed,matcher,resize-font,-tabbed
+URxvt.resize-font.step: 1
+
+URxvt.keysym.C-equal: resize-font:bigger
+URxvt.keysym.C-minus: resize-font:smaller
+URxvt.keysym.C-0: resize-font:reset
