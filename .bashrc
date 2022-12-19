@@ -3,9 +3,16 @@ alias ls="ls --color=auto"
 alias tree="tree -C -a"
 
 alias py="python3"
+alias ry="ruby"
+alias vi="nvim"
+alias vim="vi"
+alias viconf="vi ~/.config/nvim/init.vim"
+alias shconf="vi ~/.bashrc"
+alias shsrc="source ~/.bashrc"
 
 export TERM=xterm-256color
-export EDITOR=$(command -v vim)
+export EDITOR=$(command -v nvim)
+export TERMINAL=urxvt
 
 # Regular
 green='\[\e[0;32m\]'
