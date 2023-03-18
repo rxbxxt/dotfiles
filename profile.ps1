@@ -1,4 +1,9 @@
 Set-PSReadLineOption -EditMode Emacs
+
+$colors = @{}
+$colors['Command'] = [System.ConsoleColor]::Magenta
+Set-PSReadLineOption -Colors $colors
+
 Set-Location D:\fun\
 
 # Install nerd font
